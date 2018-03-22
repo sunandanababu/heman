@@ -1,16 +1,16 @@
 Color Gradients
 ###############
 
-This page covers functions with the ``heman_color_`` prefix.
+This page covers functions with the ``nandu_color_`` prefix.
 
 One-pixel tall images can be interpreted as `gradients`, also known as `lookup tables`.
 
 Creating Gradients
 ==================
 
-Clients can import a gradient using :c:data:`heman_import_u8`, or they can create one from scratch:
+Clients can import a gradient using :c:data:`nandu_import_u8`, or they can create one from scratch:
 
-.. c:function:: heman_image* heman_color_create_gradient(int width, int num_colors, const int* cp_locations, const heman_color* cp_colors)
+.. c:function:: nandu_image* heman_color_create_gradient(int width, int num_colors, const int* cp_locations, const heman_color* cp_colors)
 
     Create a 1-pixel tall, 3-band image representing a color gradient that lerps
     the given control points.
